@@ -1,6 +1,6 @@
 /*
  * App.cpp
- *
+ *	Eli lewis Etl3
  *  Created on: Feb 27, 2020
  *      Author: vtn2
  */
@@ -35,7 +35,12 @@ Vec App::getStartingPosition(unsigned numDims) {
 }
 
 Vec App::getVectorFromUser(unsigned numDims) {
-    // TODO
+	Vec v(numDims);
+	for(unsigned i = 0; i < numDims; i++){
+		cout << "->" << flush;
+		cin >> v[i];
+	}
+	return v;
 }
 
 Vec App::getVectors(const Vec& startVec) {
@@ -55,5 +60,13 @@ Vec App::getVectors(const Vec& startVec) {
 }
 
 void App::printResults(const Vec &start, const Vec &end) {
-    // TODO
+	cout << "starting position: {" << flush;
+	for (unsigned i = 0; i < start.getSize(); i++){
+		cout << start[i] << ", " << flush;
+	}
+	cout << "} \n final position: {" << flush;
+	for (unsigned i = 0; i < end.getSize(); i++){
+		cout << end[i] << ", " << flush;
+	}
+	cout << '}' << endl;
 }

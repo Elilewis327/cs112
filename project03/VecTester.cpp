@@ -30,7 +30,7 @@ void VecTester::runTests() const {
 	testInequality();
 	testAddition();
 	testSubtraction();
-	//testDotProduct();
+	testDotProduct();
 	//testReadFromFile();
 	//testWriteToFile();
 	cout << "All tests passed!" << endl;
@@ -577,7 +577,7 @@ void VecTester::testSubtraction() const {
 	cout << "Passed!" << endl;
 }
 
-/*
+
 void VecTester::testDotProduct() const {
 	cout << "Testing *... " << flush;
 	Vec v1(3);
@@ -588,21 +588,21 @@ void VecTester::testDotProduct() const {
 	v2.setItem(0, 2);
 	v2.setItem(1, 4);
 	v2.setItem(2, 6);
-	Vec saveV1 = v1;   for test 2 below
+	Vec saveV1 = v1;   //for test 2 below
 	double product = v1 * v2;
 	assert( product == 28 );
 	cout << " 1 " << flush;
-	 dot product should not change the left operand
+	//dot product should not change the left operand
 	assert( v1.getItem(0) == saveV1.getItem(0) );
 	assert( v1.getItem(1) == saveV1.getItem(1) );
 	assert( v1.getItem(2) == saveV1.getItem(2) );
 	cout << " 2 " << flush;
-	 empty
+	//empty
 	Vec v4, v5;
 	product = v4 * v5;
 	assert( product == 0 );
 	cout << " 3 " << flush;
-	 different sizes
+	//different sizes
 	try {
 		product = v2 * v4;
 		cerr << "v2 * v4 succeeded for Vecs of different sizes";
@@ -612,7 +612,7 @@ void VecTester::testDotProduct() const {
 	}
 	cout << "Passed!" << endl;
 }
-
+/*
 void VecTester::testReadFromFile() const {
 	cout << "Testing readFrom()... " << flush;
 	Vec v1;
@@ -634,13 +634,13 @@ void VecTester::testReadFromFile() const {
 	assert( v2.getItem(1) == 4 );
 	assert( v2.getItem(2) == 6 );
 	assert( v2.getItem(3) == 8 );
-        the last assertion assumes that the new array's base
+        /*the last assertion assumes that the new array's base
  *  address is different from the old array's base address,
  *  which may not be true. If your method seems to be right,
  *  is correctly using delete to deallocate the old array,
  *  and passes all assertions except this one, you may
- *  comment out this assertion.
-
+ *  comment out this assertion.*/
+/*
 	assert( v2.myArray != oldAddr );
 	cout << " 3 " << flush;
 	cout << "Passed! Make sure you close the file..." << endl;
@@ -648,31 +648,31 @@ void VecTester::testReadFromFile() const {
 
 void VecTester::testWriteToFile() const {
 	cout << "Testing writeTo()... " << flush;
-	 read a vector we know into an empty Vec...
+	//read a vector we know into an empty Vec...
 	Vec v1;
 	v1.readFrom("vecTest1.txt");
-	 make a copy of it in a different file
+	//make a copy of it in a different file
 	v1.writeTo("vecTest1Copy.txt");
 	cout << " 1 " << flush;
 	cout << "vecTest1Copy.txt created " << flush;
-	 read in the copy, and check it
+	//read in the copy, and check it
 	Vec v3;
 	v3.readFrom("vecTest1Copy.txt");
-      assert( v3.getSize() == 3 );
+      assert( v3.getSize() == 4 );
       assert( v3.myArray != nullptr );
       assert( v3.getItem(0) == 1 );
       assert( v3.getItem(1) == 2 );
       assert( v3.getItem(2) == 3 );
       cout << " 2 " << flush;
 
-	 read a vector we know into a nonempty Vec...
+	//read a vector we know into a nonempty Vec...
 	Vec v2(5);
 	v2.readFrom("vecTest2.txt");
-	 make a copy of it in a different file
+	//make a copy of it in a different file
 	v2.writeTo("vecTest2Copy.txt");
 	cout << " 3 " << flush;
 	cout << "vecTest2Copy.txt created " << flush;
-	 read in the copy and check it
+	//read in the copy and check it
 	v3.readFrom("vecTest2Copy.txt");
       assert( v3.getSize() == 4 );
       assert( v3.myArray != nullptr );
@@ -683,4 +683,4 @@ void VecTester::testWriteToFile() const {
       cout << " 4 " << flush;
 	cout << "Passed!  Make sure you closed the file..." << endl;
 }
- */
+*/

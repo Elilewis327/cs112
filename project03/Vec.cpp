@@ -157,3 +157,48 @@ bool Vec::operator!=(const Vec &rhs){
 	return !(*this == rhs);
 }
 
+Item Vec::operator*(const Vec &rhs){
+	if (mySize != rhs.mySize)
+		throw invalid_argument("Sizes must be the same for addition!");
+
+	Item sum = 0;
+
+	for (unsigned i = 0; i < mySize; i++){
+		sum += myArray[i] * rhs.myArray[i];
+	}
+
+
+	return sum;
+}
+
+void Vec::writeTo(const string &out) const{
+	ofstream fout(out.c_str());
+	assert(fout.is_open());
+	writeTo(fout);
+	fout.close();
+}
+/*
+void Vec::readFrom(const string &in){
+	ifstream fin(in.c_str());
+	assert(fin.is_open());
+
+	unsigned i = 0;
+
+	Item *tmp = new Item[10]; //how to know?
+
+	while(!fin.eof()){
+		fin >> tmp[i];
+		i++;
+	}
+
+	delete []myArray;
+	myArray = tmp;
+	mySize = i;
+
+
+
+	fin.close();
+}
+*/
+
+

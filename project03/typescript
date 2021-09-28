@@ -1,8 +1,17 @@
-Script started on Mon Sep 27 01:04:28 2021
+Script started on Tue Sep 28 11:37:42 2021
 [0m[27m[24m[Jproject03 √ [K[?2004hlls[?2004l
-Debug			Vec.h			VecTester.h		typescript
-Vec.cpp			VecTester.cpp		tester.cpp		vecStreamOut.txt
-[0m[27m[24m[Jproject03 √ [K[?2004hls./compile.sh summation.c[24Dls                      [22D  ls./compile.sh summation.c[24Dls                      [22D  ../Debug[1m/[0m[0m/project03[1m [0m[0m [?2004l
+App.cpp			Vec.cpp			VecTester.h		vecStreamOut.txt	vecTest2.txt
+App.h			Vec.h			tester.cpp		vecTest1.txt		vecTest2Copy.txt
+Debug			VecTester.cpp		typescript		vecTest1Copy.txt
+[0m[27m[24m[Jproject03 √ [K[?2004hccd Debug[?2004l
+[0m[27m[24m[JDebug √ [K[?2004hmmake all[?2004l
+make: Nothing to be done for `all'.
+[0m[27m[24m[JDebug √ [K[?2004hccd ..[?2004l
+[0m[27m[24m[Jproject03 √ [K[?2004hlls[?2004l
+App.cpp			Vec.cpp			VecTester.h		vecStreamOut.txt	vecTest2.txt
+App.h			Vec.h			tester.cpp		vecTest1.txt		vecTest2Copy.txt
+Debug			VecTester.cpp		typescript		vecTest1Copy.txt
+[0m[27m[24m[Jproject03 √ [K[?2004h../Debug[1m/[0m[0m/pro  o roject03[1m [0m[0m [?2004l
 Testing class Vec
 Testing default constructor... Passed!
 Testing explicit constructor...  1  2  3  4 Passed!
@@ -17,10 +26,33 @@ Testing ==... 1  2  3  4  5  6  7 Passed!
 Testing writeTo(ostream)... Passed! See 'vecStreamOut.txt' for values...
 Testing readFrom(istream)... Passed!
 Testing subscript...  0  1  2  Passed!
+Testing !=...  0  1  2  3 Passed!
+Testing +...  1  2  3  4 Passed!
+Testing -...  1  2  3  4 Passed!
+Testing *...  1  2  3  4 Passed!
 All tests passed!
-[0m[27m[24m[Jproject03 √ [K[?2004hlls[?2004l
-Debug			Vec.h			VecTester.h		typescript
-Vec.cpp			VecTester.cpp		tester.cpp		vecStreamOut.txt
+This application simulates how to move through space by
+adding together any number of vectors of a given size.
+How many dimensions would you like to work with? 7
+Enter starting position: 
+->1
+->2
+->3
+->4
+->5
+->6
+->7
+Do you want to enter another vector? (y/n): y
+->1
+->1
+->1
+->1
+->1
+->1
+->1
+Do you want to enter another vector? (y/n): 1
+starting position: {1, 2, 3, 4, 5, 6, 7, } 
+ final position: {2, 3, 4, 5, 6, 7, 8, }
 [0m[27m[24m[Jproject03 √ [K[?2004heexit[?2004l
 
-Script done on Mon Sep 27 01:04:51 2021
+Script done on Tue Sep 28 11:38:28 2021

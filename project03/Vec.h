@@ -8,6 +8,7 @@
 #define VEC_H_
 
 #include <stdexcept>
+#include <fstream>
 #include <iostream>
 using namespace std;
 
@@ -25,14 +26,16 @@ public:
 	Item getItem(unsigned index) const;
 	void setSize(unsigned newSize);
 	bool operator==(const Vec &v2) const;
-	void writeTo(ostream& out) const;
-	void readFrom(istream& in);
+	void writeTo(ostream &out) const;
+	void readFrom(istream &in);
 	Item& operator[](int index);
 	const Item& operator[](int index)const;
 	Vec operator+(const Vec &rhs);
 	Vec operator-(const Vec &rhs);
 	bool operator!=(const Vec &rhs);
-
+	Item operator*(const Vec &rhs);
+	void writeTo(const string &out) const;
+	void readFrom(const string &in);
 	
 private:
 	unsigned mySize;

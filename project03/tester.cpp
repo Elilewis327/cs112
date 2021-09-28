@@ -5,8 +5,11 @@
  */
 
 #include "VecTester.h"
+#include "App.h"
 
 int main() {
 	VecTester vt;
 	vt.runTests();
+	App a;
+	a.run();
 }
