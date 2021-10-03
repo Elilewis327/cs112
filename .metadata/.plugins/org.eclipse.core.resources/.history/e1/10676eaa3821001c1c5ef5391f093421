@@ -1,0 +1,26 @@
+//============================================================================
+// Name        : findDot.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int findDot(const vector<char> &charvec) const{
+	unsigned i = 0;
+	while (vector[i] != ‘.’){
+	if (vector.size() < i){return -1;}
+i++;
+}
+return i;
+}
+
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

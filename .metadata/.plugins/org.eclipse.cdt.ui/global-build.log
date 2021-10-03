@@ -1,0 +1,1511 @@
+11:32:59 **** Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building file: ../VecTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VecTester.d" -MT"VecTester.o" -o "VecTester.o" "../VecTester.cpp"
+../VecTester.cpp:187:5: warning: explicitly assigning value of variable of type 'Vec<double>' to itself [-Wself-assign-overloaded]
+        v3 = v3;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../VecTester.cpp
+ 
+Building file: ../tester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tester.d" -MT"tester.o" -o "tester.o" "../tester.cpp"
+Finished building: ../tester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+11:33:40 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+11:33:42 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+12:01:51 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building file: ../tester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tester.d" -MT"tester.o" -o "tester.o" "../tester.cpp"
+Finished building: ../tester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Undefined symbols for architecture x86_64:
+  "MatrixTester::testInequality()", referenced from:
+      MatrixTester::runTests() in MatrixTester.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [project04] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:02:32 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+12:02:34 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+12:07:34 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+../MatrixTester.cpp:553:4: error: no matching member function for call to 'readFrom'
+        m.readFrom("MatrixTest1.txt");
+        ~~^~~~~~~~
+../Matrix.h:24:8: note: candidate function not viable: no known conversion from 'const char [16]' to 'std::istream &' (aka 'basic_istream<char> &') for 1st argument
+                void readFrom(istream &in);
+                     ^
+../Matrix.h:25:8: note: candidate function not viable: no known conversion from 'const char [16]' to 'std::string &' (aka 'basic_string<char> &') for 1st argument
+                void readFrom(string &in);
+                     ^
+1 warning and 1 error generated.
+make: *** [MatrixTester.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:08:28 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+../MatrixTester.cpp:553:4: error: no matching member function for call to 'readFrom'
+        m.readFrom("MatrixTest1.txt");
+        ~~^~~~~~~~
+../Matrix.h:24:8: note: candidate function not viable: no known conversion from 'const char [16]' to 'std::istream &' (aka 'basic_istream<char> &') for 1st argument
+                void readFrom(istream &in);
+                     ^
+../Matrix.h:25:8: note: candidate function not viable: no known conversion from 'const char [16]' to 'std::string &' (aka 'basic_string<char> &') for 1st argument
+                void readFrom(string &in);
+                     ^
+1 warning and 1 error generated.
+make: *** [MatrixTester.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:08:47 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building file: ../tester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tester.d" -MT"tester.o" -o "tester.o" "../tester.cpp"
+Finished building: ../tester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+12:08:50 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+12:09:35 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+12:09:36 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+12:10:09 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+12:10:10 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+12:11:40 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:54:8: error: cannot refer to type member 'Matrix' in 'Matrix' with '->'
+        this->Matrix(rows, columns);
+              ^
+../Matrix.h:15:7: note: member 'Matrix' declared here
+class Matrix {
+      ^
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:11:52 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:54:7: error: expression is not assignable
+        this = Matrix(rows, columns);
+        ~~~~ ^
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:11:53 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:54:7: error: expression is not assignable
+        this = Matrix(rows, columns);
+        ~~~~ ^
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:11:56 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:54:7: error: expression is not assignable
+        this = Matrix(rows, columns);
+        ~~~~ ^
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:15:28 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building file: ../tester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tester.d" -MT"tester.o" -o "tester.o" "../tester.cpp"
+Finished building: ../tester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+12:15:30 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+12:15:48 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+12:15:49 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:03:49 **** Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:70:9: error: non-const lvalue reference to type 'Matrix' cannot bind to a value of unrelated type 'Vec<Item>' (aka 'Vec<double>')
+        return tmp;
+               ^~~
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:04:54 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:70:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building file: ../tester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tester.d" -MT"tester.o" -o "tester.o" "../tester.cpp"
+Finished building: ../tester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:04:57 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:08:31 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:70:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:08:33 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:09:43 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+../MatrixTester.cpp:333:7: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'Matrix')
+        cout << m0b << endl;
+        ~~~~ ^  ~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:760:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:793:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:800:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:807:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:821:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:867:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:874:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:882:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1066:1: note: candidate function template not viable: no known conversion from 'Matrix' to 'const std::error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:753:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'Matrix')
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:814:1: note: candidate template ignored: could not match 'const _CharT *' against 'Matrix'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1049:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Matrix'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1057:1: note: candidate template ignored: could not match 'basic_string_view<type-parameter-0-0, type-parameter-0-1>' against 'Matrix'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1074:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-2>' against 'Matrix'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1086:1: note: candidate template ignored: could not match 'unique_ptr<type-parameter-0-2, type-parameter-0-3>' against 'Matrix'
+operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1093:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'Matrix'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:362:1: note: candidate template ignored: could not match '__iom_t8<type-parameter-0-2>' against 'Matrix'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const __iom_t8<_MoneyT>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:482:1: note: candidate template ignored: could not match '__iom_t10<type-parameter-0-0>' against 'Matrix'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const __iom_t10<_CharT>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:572:33: note: candidate template ignored: could not match '__quoted_output_proxy<type-parameter-0-0, type-parameter-0-2, type-parameter-0-1>' against 'Matrix'
+basic_ostream<_CharT, _Traits>& operator<<(
+                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:592:33: note: candidate template ignored: could not match '__quoted_proxy<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Matrix'
+basic_ostream<_CharT, _Traits>& operator<<(
+                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:195:20: note: candidate function not viable: no known conversion from 'Matrix' to 'std::basic_ostream<char> &(*)(std::basic_ostream<char> &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:199:20: note: candidate function not viable: no known conversion from 'Matrix' to 'basic_ios<std::basic_ostream<char>::char_type> &(*)(basic_ios<std::basic_ostream<char>::char_type> &)' (aka 'basic_ios<char> &(*)(basic_ios<char> &)') for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:204:20: note: candidate function not viable: no known conversion from 'Matrix' to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:207:20: note: candidate function not viable: no known conversion from 'Matrix' to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:208:20: note: candidate function not viable: no known conversion from 'Matrix' to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:209:20: note: candidate function not viable: no known conversion from 'Matrix' to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:210:20: note: candidate function not viable: no known conversion from 'Matrix' to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:211:20: note: candidate function not viable: no known conversion from 'Matrix' to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:212:20: note: candidate function not viable: no known conversion from 'Matrix' to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:213:20: note: candidate function not viable: no known conversion from 'Matrix' to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:214:20: note: candidate function not viable: no known conversion from 'Matrix' to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:215:20: note: candidate function not viable: no known conversion from 'Matrix' to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:216:20: note: candidate function not viable: no known conversion from 'Matrix' to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:217:20: note: candidate function not viable: no known conversion from 'Matrix' to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:218:20: note: candidate function not viable: no known conversion from 'Matrix' to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:219:20: note: candidate function not viable: no known conversion from 'Matrix' to 'const void *' for 1st argument; take the address of the argument with &
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:220:20: note: candidate function not viable: no known conversion from 'Matrix' to 'basic_streambuf<std::basic_ostream<char>::char_type> *' (aka 'basic_streambuf<char> *') for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:223:20: note: candidate function not viable: no known conversion from 'Matrix' to 'std::nullptr_t' for 1st argument
+    basic_ostream& operator<<(nullptr_t)
+                   ^
+1 warning and 1 error generated.
+make: *** [MatrixTester.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:09:55 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:09:57 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:10:23 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:10:26 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:11:07 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:63:45: error: expected ';' after expression
+        cout << myColumns << " " << myRows << endls
+                                                   ^
+                                                   ;
+../Matrix.cpp:63:40: error: use of undeclared identifier 'endls'
+        cout << myColumns << " " << myRows << endls
+                                              ^
+../Matrix.cpp:71:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning and 2 errors generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:11:12 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:71:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:11:14 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:11:30 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:71:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:11:32 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:11:56 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:11:57 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:16:39 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:78:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:146:5: error: no viable overloaded '='
+        m5 = m0 = m4;
+        ~~ ^ ~~~~~~~
+../Matrix.h:26:8: note: candidate function not viable: cannot convert argument of incomplete type 'void' to 'const Matrix' for 1st argument
+                void operator=(const Matrix& m2);
+                     ^
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning and 1 error generated.
+make: *** [MatrixTester.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:17:14 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:71:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:146:5: error: no viable overloaded '='
+        m5 = m0 = m4;
+        ~~ ^ ~~~~~~~
+../Matrix.h:26:8: note: candidate function not viable: cannot convert argument of incomplete type 'void' to 'const Matrix' for 1st argument
+                void operator=(const Matrix& m2);
+                     ^
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning and 1 error generated.
+make: *** [MatrixTester.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:17:21 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:71:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building file: ../tester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tester.d" -MT"tester.o" -o "tester.o" "../tester.cpp"
+Finished building: ../tester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:17:24 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:18:01 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:73:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:18:02 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:18:29 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:74:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:18:31 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:19:28 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:73:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:19:30 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:20:07 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:20:08 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:20:10 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:20:15 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:20:38 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:20:39 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:22:03 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:22:16 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:22:18 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:30:58 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:31:02 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:31:18 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:73:9: warning: reference to stack memory associated with local variable 'tmp' returned [-Wreturn-stack-address]
+        return tmp;
+               ^~~
+1 warning generated.
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building file: ../VecTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VecTester.d" -MT"VecTester.o" -o "VecTester.o" "../VecTester.cpp"
+../VecTester.cpp:187:5: warning: explicitly assigning value of variable of type 'Vec<double>' to itself [-Wself-assign-overloaded]
+        v3 = v3;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../VecTester.cpp
+ 
+Building file: ../tester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tester.d" -MT"tester.o" -o "tester.o" "../tester.cpp"
+Finished building: ../tester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:32:11 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:73:9: error: non-const lvalue reference to type 'Matrix' cannot bind to a value of unrelated type 'Matrix *'
+        return tmp;
+               ^~~
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:32:21 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:32:25 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:33:03 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:33:04 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:35:12 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:67:5: error: indirection requires pointer operand ('Vec<Item>' (aka 'Vec<double>') invalid)
+                                *tmp[j][i] = myVec[i][j];
+                                ^~~~~~~~~~
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:35:20 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building file: ../MatrixTester.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MatrixTester.d" -MT"MatrixTester.o" -o "MatrixTester.o" "../MatrixTester.cpp"
+../MatrixTester.cpp:156:5: warning: explicitly assigning value of variable of type 'Matrix' to itself [-Wself-assign-overloaded]
+        m5 = m5;
+        ~~ ^ ~~
+1 warning generated.
+Finished building: ../MatrixTester.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:35:22 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:45:13 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:45:15 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:48:21 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:67:38: error: expected expression
+                for(unsigned j = 0; j < myColumns; ++;){
+                                                   ^
+../Matrix.cpp:67:38: error: expected ')'
+../Matrix.cpp:67:6: note: to match this '('
+                for(unsigned j = 0; j < myColumns; ++;){
+                   ^
+../Matrix.cpp:67:41: error: expected expression
+                for(unsigned j = 0; j < myColumns; ++;){
+                                                      ^
+3 errors generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:48:31 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:48:32 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:49:15 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:69:9: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'Vec<Item>' (aka 'Vec<double>'))
+                        cout << tmp[i][j] << ' ' << myVec[j][i] << endl;
+                        ~~~~ ^  ~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:760:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:793:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:800:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:807:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:821:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:867:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:874:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:882:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1066:1: note: candidate function template not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'const std::error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:753:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'Vec<double>')
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:814:1: note: candidate template ignored: could not match 'const _CharT *' against 'Vec<Item>' (aka 'Vec<double>')
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1049:1: note: candidate template ignored: could not match 'basic_string' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1057:1: note: candidate template ignored: could not match 'basic_string_view' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1074:1: note: candidate template ignored: could not match 'shared_ptr' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1086:1: note: candidate template ignored: could not match 'unique_ptr' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1093:1: note: candidate template ignored: could not match 'bitset' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:362:1: note: candidate template ignored: could not match '__iom_t8' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const __iom_t8<_MoneyT>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:482:1: note: candidate template ignored: could not match '__iom_t10' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const __iom_t10<_CharT>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:572:33: note: candidate template ignored: could not match '__quoted_output_proxy' against 'Vec'
+basic_ostream<_CharT, _Traits>& operator<<(
+                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:592:33: note: candidate template ignored: could not match '__quoted_proxy' against 'Vec'
+basic_ostream<_CharT, _Traits>& operator<<(
+                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:195:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'std::basic_ostream<char> &(*)(std::basic_ostream<char> &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:199:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'basic_ios<std::basic_ostream<char>::char_type> &(*)(basic_ios<std::basic_ostream<char>::char_type> &)' (aka 'basic_ios<char> &(*)(basic_ios<char> &)') for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:204:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:207:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:208:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:209:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:210:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:211:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:212:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:213:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:214:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:215:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:216:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:217:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:218:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:219:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'const void *' for 1st argument; take the address of the argument with &
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:220:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'basic_streambuf<std::basic_ostream<char>::char_type> *' (aka 'basic_streambuf<char> *') for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:223:20: note: candidate function not viable: no known conversion from 'Vec<Item>' (aka 'Vec<double>') to 'std::nullptr_t' for 1st argument
+    basic_ostream& operator<<(nullptr_t)
+                   ^
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:51:47 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:51:49 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:52:28 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:52:29 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:53:11 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:53:12 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:54:00 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:54:02 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:54:50 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:54:52 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:55:30 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:55:32 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:56:23 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+../Matrix.cpp:67:8: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'Vec<double>')
+                cout << myVec[i] << ' ' << flush;
+                ~~~~ ^  ~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:760:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:793:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:800:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:807:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:821:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:867:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:874:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:882:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1066:1: note: candidate function template not viable: no known conversion from 'Vec<double>' to 'const std::error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:753:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'Vec<double>')
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:814:1: note: candidate template ignored: could not match 'const _CharT *' against 'Vec<double>'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1049:1: note: candidate template ignored: could not match 'basic_string' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1057:1: note: candidate template ignored: could not match 'basic_string_view' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1074:1: note: candidate template ignored: could not match 'shared_ptr' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1086:1: note: candidate template ignored: could not match 'unique_ptr' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, unique_ptr<_Yp, _Dp> const& __p)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:1093:1: note: candidate template ignored: could not match 'bitset' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:362:1: note: candidate template ignored: could not match '__iom_t8' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const __iom_t8<_MoneyT>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:482:1: note: candidate template ignored: could not match '__iom_t10' against 'Vec'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const __iom_t10<_CharT>& __x)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:572:33: note: candidate template ignored: could not match '__quoted_output_proxy' against 'Vec'
+basic_ostream<_CharT, _Traits>& operator<<(
+                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:592:33: note: candidate template ignored: could not match '__quoted_proxy' against 'Vec'
+basic_ostream<_CharT, _Traits>& operator<<(
+                                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:195:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'std::basic_ostream<char> &(*)(std::basic_ostream<char> &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:199:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'basic_ios<std::basic_ostream<char>::char_type> &(*)(basic_ios<std::basic_ostream<char>::char_type> &)' (aka 'basic_ios<char> &(*)(basic_ios<char> &)') for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:204:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&))
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:207:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:208:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:209:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:210:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:211:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:212:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:213:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:214:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:215:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:216:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:217:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:218:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:219:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'const void *' for 1st argument; take the address of the argument with &
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:220:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'basic_streambuf<std::basic_ostream<char>::char_type> *' (aka 'basic_streambuf<char> *') for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream:223:20: note: candidate function not viable: no known conversion from 'Vec<double>' to 'std::nullptr_t' for 1st argument
+    basic_ostream& operator<<(nullptr_t)
+                   ^
+1 error generated.
+make: *** [Matrix.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:56:45 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:56:47 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:56:59 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:57:00 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:57:31 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:57:32 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:58:27 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:58:28 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:58:45 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:58:47 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+16:59:20 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+16:59:22 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+17:00:42 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+17:00:44 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+17:00:50 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+17:00:51 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+17:01:10 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+17:01:12 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+17:01:19 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+17:01:20 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+17:01:32 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+17:01:33 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+17:03:11 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+17:03:12 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.
+17:04:36 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.o" -o "Matrix.o" "../Matrix.cpp"
+Finished building: ../Matrix.cpp
+ 
+Building target: project04
+Invoking: MacOS X C++ Linker
+g++  -o "project04"  ./Matrix.o ./MatrixTester.o ./VecTester.o ./tester.o   
+Finished building target: project04
+ 
+17:04:37 **** Incremental Build of configuration Debug for project project04 ****
+make all 
+make: Nothing to be done for `all'.

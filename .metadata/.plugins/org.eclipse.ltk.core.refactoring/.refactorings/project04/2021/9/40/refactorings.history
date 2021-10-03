@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Create method reSize" description="Extract Method Refactoring" fileName="file:/Users/jan/eclipse-workspace/cs112/project04/Matrix.cpp" flags="4" id="org.eclipse.cdt.internal.ui.refactoring.extractfunction.ExtractFunctionRefactoring" name="reSize" replaceDuplicates="false" selection="282,130" stamp="1632932089340" visibility="private"/>
+</session>
